@@ -82,7 +82,14 @@ class FriendsCard_Plugin implements Typecho_Plugin_Interface {
             return preg_replace_callback(
                 "/(\[friends\](.*?)\[\/friends\])/is",
                 function ($data) {
-                    $infos = json_decode($data[2], true);
+                    $originData = $data[2];
+                    $originData = preg_replace('/<br>/is', '', $originData);
+                    $originData = preg_replace('/&quot;/is', '"', $originData);
+                    $originData = preg_replace('/<\/p><pre><code>/is', '', $originData);
+                    $originData = preg_replace('/<\/code><\/pre><p>/is', '', $originData);
+
+                    $infos = json_decode($originData, true);
+                    self::info($originData);
                     $result = '<div class="friends-card">'
                         . '<a class="friends-link" href="'. $infos['url'] . '">'
                         . '<div class="image-overlay"></div>'
