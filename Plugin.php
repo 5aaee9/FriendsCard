@@ -54,10 +54,10 @@ class FriendsCard_Plugin implements Typecho_Plugin_Interface {
 
 
     public static function header() {
-        $url = Helper::options()->pluginUrl . '/FriendsCard/';
-        // friends-card
-        // <link rel="stylesheet" href="http://127.0.0.1:8081/usr/themes/default/normalize.css">
-        echo '<link rel="stylesheet" href="' . $url . 'css/index.css">';
+        // localhost url
+        // $url = Helper::options()->pluginUrl . '/FriendsCard/';
+        // echo '<link rel="stylesheet" href="' . $url . 'css/index.css">';
+        echo '<link rel="stylesheet" href="https://publish.indexyz.me/css/FirendsCard.css">';
     }
 
     private static function printToStdout(string $levelName, $data): void {
