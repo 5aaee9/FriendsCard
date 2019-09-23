@@ -14,6 +14,7 @@
     overflow: hidden !important;
     text-decoration: none;
     display: block;
+    border: 0px !important;
 }
 
 .friends-image {
