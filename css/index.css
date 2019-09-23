@@ -45,20 +45,18 @@
 }
 
 .firends-texts h2 {
-    font-size: 120%;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    font-size: 1.2em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .firends-texts h3 {
-    font-size: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
-    margin-bottom: 1em;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1em !important;
+    margin-bottom: 1em !important;
 }
 
 .image-overlay {
