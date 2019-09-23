@@ -13,6 +13,7 @@
     text-overflow: ellipsis !important;
     overflow: hidden !important;
     text-decoration: none;
+    display: block;
 }
 
 .friends-image {
@@ -45,10 +46,19 @@
 
 .firends-texts h2 {
     font-size: 120%;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
 }
 
 .firends-texts h3 {
     font-size: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
 .image-overlay {
